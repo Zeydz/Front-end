@@ -1,11 +1,11 @@
 /* Base */
-@use "base/_reset";
+@use "base/reset";
 @use "base/base";
 
 /* Layouts */
-@use "layout/_footer";
-@use "layout/_grid";
-@use "layout/_navigation";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/navigation";
 
 /* Pages */
 @use "pages/home";

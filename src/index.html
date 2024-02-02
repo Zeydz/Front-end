@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo">NPM Automatisering med Parcel</a>
+        <a href="index.html" id="logo">SASS & Parcel</a>
         <!-- Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -39,5 +39,23 @@
             </ul>
         </nav>
     </header>
+    <main class="bildercontainer">
+        <h1>Bilder</h1> 
+        <!-- Bild 1 -->
+        <div class="pic">
+            <picture>
+                <source srcset="pics/produkt1.png?as=webp&width=300" type="image/webp">
+                <source srcset="pics/produkt1.png?as=avif&width=300" type="image/avif">
+                <img src="pics/produkt1.png?width=200" alt="Bilvårdsprodukt">
+            </picture>
+        </div>
+        <div class="pic">
+            <picture>
+                <source srcset="pics/produkt2.png?as=webp&width=300" type="image/webp">
+                <source srcset="pics/produkt2.png?as=avif&width=300" type="image/avif">
+                <img src="pics/produkt2.png?width=200" alt="Bilvårdsprodukt">
+            </picture>
+        </div>
+    </main>
 </body>
 </html>

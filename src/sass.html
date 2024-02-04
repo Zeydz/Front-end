@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.scss">
     <script src="js/main.js" type="module"></script>
 </head>
-<body class="specific-color">
+<body>
     <header>
         <a href="index.html" id="logo">SASS & Parcel</a>
         <!-- Meny knapp för att öppna mobilmenyn-->
@@ -25,8 +25,8 @@
             <!-- Knapp som visas om mobilmenyn är utfälld -->
             <button class="menu-btn close" id="close-menu">
                 <span class="menu-icon">
-                    <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>
+                    <span class="bars cross cross1"></span>
+                    <span class="bars cross cross2"></span>
                 </span>
                 <span class="menu-text">Stäng</span>
             </button>
@@ -39,24 +39,10 @@
             </ul>
         </nav>
     </header>
-    <main class="bildercontainer">
-        <h1>Bilder</h1> 
-        <p>Här är ett exempel på några bilder</p>
-        <!-- Bild 1 -->
-        <div class="pic">
-            <picture>
-                <source srcset="pics/produkt1.png?as=webp&width=300" type="image/webp">
-                <source srcset="pics/produkt1.png?as=avif&width=300" type="image/avif">
-                <img src="pics/produkt1.png?width=200" alt="Bilvårdsprodukt">
-            </picture>
-        </div>
-        <div class="pic">
-            <picture>
-                <source srcset="pics/produkt2.png?as=webp&width=300" type="image/webp">
-                <source srcset="pics/produkt2.png?as=avif&width=300" type="image/avif">
-                <img src="pics/produkt2.png?width=200" alt="Bilvårdsprodukt">
-            </picture>
-        </div>
+    <main class="sasscontainer">
+        <h1>Utvärdering</h1> 
+    <p>Detta arbetet var annorlunda jämfört med tidigare kunskaper, men ändå roligt. SASS är mycket intressant, men även väldigt komplicerat och förvirrande i mina ögon.</p><br><p>Fördelar med sass är att i större projekt är det enkelt att hantera och modifiera redan existerande kod genom variabler osv. Genom att dela upp koden i olika filer är det enklare att hålla reda på koden och på så sätt minska tiden att söka efter kod.</p><br> <p>Nackdelarna är att i mindre projekt som detta blir det mycket rörigt att dela upp innehållet i olika filer. Eftersom att detta projektet inte har så mycket kod så hade det varit enklare att samla allt i en och samma fil. </p>
+      
     </main>
 </body>
 </html>

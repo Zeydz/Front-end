@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 /* Pics */
 .bildercontainer {
   width: 100%;
@@ -17,8 +19,15 @@ img {
 
 /* Dark mode */
 
-@media (prefer-color-scheme:dark) {
-    body {
-        background-color: variables.$darker-color;
+@media (prefers-color-scheme: dark) {
+  .specific-color {
+    background-color: variables.$darker-color;
+    img {
+      width: 100%;
+      box-shadow: rgb(247, 246, 246) 0px 3px 20px;
     }
+    h1, p {
+        color: variables.$secondary-color;
+    }
+  }
 }

@@ -1,16 +1,17 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixings";
 
 
 /* Navigation */
 header {
     height: 100px;
-    background-color: variables.$primary-color;
+    background-color: variables.$updated-primary-color;
     margin: 0;
     position: relative;
     padding: 0 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include mixings.flex();
+
+
 
     #logo {
         color: variables.$secondary-color;
@@ -20,7 +21,7 @@ header {
 }
 
 nav {
-    background-color: variables.$primary-color;
+    background-color: variables.$updated-primary-color;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -53,16 +54,15 @@ nav {
 }
 
 /* Meny knapp design */
-
+/* If sats */
 .menu-btn {
     display: flex;
     align-items: center;
     padding: 8px 15px;
     background-color: variables.$primary-color;
-    border: variables.$primary-color solid 2px;
     cursor: pointer;
+    border: white solid 2px;
 }
-
 .open {
     margin: 0 1em;
 }
@@ -101,15 +101,18 @@ nav {
 .cross {
     width: 25px;
     position: relative;
-    &.cross1 {
-        transform: rotate(45deg);
-        top: 5px;
-    }
-    &.cross2 {
-        transform: rotate(135deg);
-        top: -3px;
-    }
 }
+.cross1 {
+    @extend .cross;
+    transform: rotate(45deg);
+    top: 5px;
+}
+.cross2 {
+    @extend .cross;
+    transform: rotate(135deg);
+    top: -3px;
+}
+
 
 @media only screen and (min-width: 992px) {
     header {

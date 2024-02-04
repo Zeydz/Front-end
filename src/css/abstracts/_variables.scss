@@ -1,3 +1,13 @@
 $primary-color: blue;
 $secondary-color: white;
-$darker-color: darken(black, 20%);
+$ligher-color: lighten(gray, 30%);
+$darker-color: darken(gray, 45%);
+
+$updated-primary-color: $primary-color;
+
+/* Ändra header-färg */
+@if ($updated-primary-color == blue) {
+    $updated-primary-color: black;
+} @else {
+    $updated-primary-color: red;
+}

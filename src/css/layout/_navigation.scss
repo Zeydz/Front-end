@@ -1,5 +1,5 @@
 @use "../abstracts/variables";
-@use "../abstracts/mixings";
+@use "../abstracts/mixins";
 
 
 /* Navigation */
@@ -9,7 +9,7 @@ header {
     margin: 0;
     position: relative;
     padding: 0 1em;
-    @include mixings.flex();
+    @include mixins.flex();
 
 
 

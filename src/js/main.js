@@ -23,11 +23,3 @@ function toggleMenu() {
         navMenuEl.style.display = "none";
     }
 }
-
-
-
-/* Javascript för box */
-document.getElementById('triggerAni').addEventListener('click', function() {
-    document.querySelector('.box').classList.toggle('animate');
-  });
-  

@@ -25,8 +25,8 @@
             <!-- Knapp som visas om mobilmenyn är utfälld -->
             <button class="menu-btn close" id="close-menu">
                 <span class="menu-icon">
-                    <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>
+                    <span class="bars cross cross1"></span>
+                    <span class="bars cross cross2"></span>
                 </span>
                 <span class="menu-text">Stäng</span>
             </button>
@@ -40,22 +40,16 @@
         </nav>
     </header>
     <main class="bildercontainer">
-        <h1>Bilder</h1> 
-        <p>Här är ett exempel på några bilder</p>
-        <!-- Bild 1 -->
+        <h1 class="sidetoside">Detta är en jobbig text.</h1>
+        <div class="box"></div>
         <div class="pic">
-            <picture>
-                <source srcset="pics/produkt1.png?as=webp&width=300" type="image/webp">
-                <source srcset="pics/produkt1.png?as=avif&width=300" type="image/avif">
-                <img src="pics/produkt1.png?width=200" alt="Bilvårdsprodukt">
-            </picture>
-        </div>
-        <div class="pic">
-            <picture>
-                <source srcset="pics/produkt2.png?as=webp&width=300" type="image/webp">
-                <source srcset="pics/produkt2.png?as=avif&width=300" type="image/avif">
-                <img src="pics/produkt2.png?width=200" alt="Bilvårdsprodukt">
-            </picture>
+            <div class="large">
+                <picture>
+                    <source srcset="pics/produkt2.png?as=webp&width=500" type="image/webp">
+                    <source srcset="pics/produkt2.png?as=avif&width=500" type="image/avif">
+                    <img src="pics/produkt2.png?width=500" alt="Bilvårdsprodukt">
+                </picture>
+            </div>
         </div>
     </main>
 </body>

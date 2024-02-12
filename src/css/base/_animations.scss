@@ -1,0 +1,58 @@
+.box {
+  margin: 7em auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 2s ease-in;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: red;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: green;
+  }
+}
+
+.box:hover {
+  animation: spinning 2s infinite linear;
+}
+
+/* Flyttar text sida till sida */
+.sidetoside {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  animation: moveSideToSide 3s infinite alternate;
+}
+
+@keyframes moveSideToSide {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+.large:hover {
+  animation: large 1s forwards;
+}
+
+/* Make picture bigger */
+
+@keyframes large {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

@@ -53,7 +53,13 @@ function createChart(courseNames, applicantsTotal) {
       }]
     },
     options: {
+      animation: true,
+      responsive: true, 
+      maintainAspectRatio: true,
       scales: {
+        x: {
+          display: false,
+        },
         y: {
           beginAtZero: true
         }

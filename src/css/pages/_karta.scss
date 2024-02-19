@@ -1,0 +1,35 @@
+.kartacontainer {
+    width: 80%;
+    margin: auto;
+    .center {
+        width: 60%;
+        margin: auto;
+        input, label  {
+            margin: 20px auto;
+            width: 60%;
+            display: block;
+            text-align: center;
+        }
+        button {
+            width: 100px;
+            text-align: center;
+            margin: auto;
+            display: block;
+            padding: 5px;
+        }
+    }
+    .frame {
+        margin: 3em auto;
+        text-align: center;
+        display: block;
+        width: 100%;
+
+        iframe {
+            width: 800px;
+            max-width: 100%;
+            aspect-ratio: 3/2;
+            }                
+    }
+}  
+
+

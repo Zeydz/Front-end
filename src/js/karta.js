@@ -1,6 +1,9 @@
 "use strict";
+/* Denna fil fetchar data från nominatim openstreetmap för att på så sätt visa en karta med value från input-fältet. */
+
 /* Hämtar sökknappen samt skapar en eventlistenet för värdet på input. Skickar med value till nästa funktion */
 const searchBtn = document.getElementById("searchBtn");
+
 searchBtn.addEventListener("click", function () {
   const searchInp = document.getElementById("searchInp").value;
   getData(searchInp);
@@ -9,6 +12,8 @@ searchBtn.addEventListener("click", function () {
 /* Fetchar data med value från eventlistener. Skickar data till cordMap. */
 async function getData(searchVal) {
   try {
+
+    /* Fetchar data från openstreetmap, med value från input */
     const response = await fetch(
       "https://nominatim.openstreetmap.org/search?addressdetails=1&q=" +
         searchVal +
